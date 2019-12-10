@@ -2,7 +2,7 @@ let mysql = require('mysql');
 
 let connectionPool;
 
-module.exports = {
+export default {
     testConnection(params, callback) {
         let connection = mysql.createConnection({
             host: params.hostName,
@@ -32,26 +32,25 @@ module.exports = {
         });
     },
 
-    query(sql, params, callback) {
-        let _params = [];
-        let _callback;
-        if (arguments.length === 2 && typeof arguments[1] == 'function') {
-            _callback = params;
-        } else if (arguments.length === 3 && Array.isArray(arguments[1]) && typeof arguments[2] === 'function') {
-            _params = params;
-            _callback = callback;
-        }
-        connectionPool.getConnection(function (err, connection) {
-            if (err) {
-                _callback.apply(null, [err]);
-                return
-            }
-            connection.query(sql, _params, function () {
-                connectionPool.releaseConnection(connection);
-                _callback.apply(null, arguments)
+    query: function (sql, params = []) {
+        return new Promise((resolve, reject) => {
+            connectionPool.getConnection((err, connection) => {
+                if (err) {
+                    resolve(err);
+                    return;
+                }
+                connection.query(sql, params, (err, result) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(result);
+                    }
+                    connectionPool.releaseConnection(connection);
+                })
+
             })
         })
-    }
+    },
 };
 
 
