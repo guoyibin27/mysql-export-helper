@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c6dfb10-558d-4b03-a61e-c07b48589860" name="Default Changelist" comment="" />
+    <list default="true" id="0c6dfb10-558d-4b03-a61e-c07b48589860" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/Preview.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/template/html_template.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/ConnectionDetails.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/ConnectionDetails.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/MainPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MainPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/mysql/dbmanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/mysql/dbmanager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/mysql/sqls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/mysql/sqls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,17 +26,25 @@
       <list>
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
   <component name="ProjectId" id="1UjEWQE2GETlPUBwoNqFZKom4m3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -31,6 +53,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\WebstormProjects\mysql-doc-export\node_modules\prettier" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="ts.external.directory.path" value="C:\Users\54455\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.5233.80\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -73,44 +96,79 @@
       <updated>1575861634104</updated>
       <workItem from="1575861636145" duration="17614000" />
       <workItem from="1575943513355" duration="250000" />
+      <workItem from="1575945784064" duration="7796000" />
+      <workItem from="1575959655423" duration="8829000" />
+      <workItem from="1576028968692" duration="24192000" />
     </task>
+    <task id="LOCAL-00001" summary="add features">
+      <created>1575958865867</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575958865867</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add features" />
+    <option name="LAST_COMMIT_MESSAGE" value="add features" />
   </component>
   <component name="WindowStateProjectService">
     <state x="778" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575861897019">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="778" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1575861897019" />
-    <state width="859" height="193" key="GridCell.Tab.0.bottom" timestamp="1575893179778">
+    <state x="1124" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576048365361">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="859" height="193" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1575893179778" />
-    <state width="859" height="193" key="GridCell.Tab.0.center" timestamp="1575893179778">
+    <state x="1124" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1576048365361" />
+    <state x="1038" y="118" key="CommitChangelistDialog2" timestamp="1575958863920">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="859" height="193" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1575893179778" />
-    <state width="859" height="193" key="GridCell.Tab.0.left" timestamp="1575893179778">
+    <state x="1038" y="118" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1575958863920" />
+    <state width="1060" height="116" key="GridCell.Tab.0.bottom" timestamp="1576061952690">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="859" height="193" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1575893179778" />
-    <state width="859" height="193" key="GridCell.Tab.0.right" timestamp="1575893179778">
+    <state width="1060" height="116" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1576061952690" />
+    <state width="1060" height="116" key="GridCell.Tab.0.center" timestamp="1576061952690">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="859" height="193" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1575893179778" />
+    <state width="1060" height="116" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1576061952690" />
+    <state width="1060" height="116" key="GridCell.Tab.0.left" timestamp="1576061952690">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1060" height="116" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1576061952690" />
+    <state width="1060" height="116" key="GridCell.Tab.0.right" timestamp="1576061952690">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1060" height="116" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1576061952690" />
+    <state x="1176" y="238" key="RollbackChangesDialog" timestamp="1576047861257">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1176" y="238" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576047861257" />
+    <state x="1030" y="257" key="Vcs.Push.Dialog.v2" timestamp="1575958867927">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1030" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1575958867927" />
     <state x="1112" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575890210458">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1112" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1575890210458" />
-    <state x="1105" y="247" key="run.anything.popup" timestamp="1575877124556">
+    <state x="921" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575958836730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1105" y="247" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1575877124556" />
-    <state x="1136" y="271" width="672" height="678" key="search.everywhere.popup" timestamp="1575876315601">
+    <state x="921" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1575958836730" />
+    <state x="1105" y="247" key="run.anything.popup" timestamp="1575960983311">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1136" y="271" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1575876315601" />
+    <state x="1105" y="247" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1575960983311" />
+    <state x="1136" y="271" width="672" height="678" key="search.everywhere.popup" timestamp="1576061731166">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1136" y="271" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1576061731166" />
   </component>
 </project>

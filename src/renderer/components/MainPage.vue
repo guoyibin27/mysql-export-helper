@@ -136,7 +136,9 @@
                 this.$alert(message, title, {
                     confirmButtonText: "确定",
                     callback: action => {
-                        callback()
+                        if (callback) {
+                            callback()
+                        }
                     }
                 })
             },
@@ -161,12 +163,8 @@
                 db.testConnection(item, function (status, error) {
                     if (status === "success") {
                         self.loading = false;
-
-                        let url = "/connection?c=" + item.connectionName +
-                            "&h=" + item.hostName + "&p=" + item.port +
-                            "&u=" + item.username + "&pwd=" + item.password +
-                            "&s=" + item.schema;
-                        self.$router.push({path: url});
+                        self.$router.push({path: "/connection"});
+                        sessionStorage.setItem("CURRENT_CONNECTION", JSON.stringify(item));
                     } else {
                         self.showMessage(error.message, '', function () {
                             self.loading = false;

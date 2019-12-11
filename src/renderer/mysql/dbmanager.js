@@ -22,6 +22,9 @@ export default {
     },
 
     connectDb(params) {
+        if (connectionPool) {
+            connectionPool.end();
+        }
         connectionPool = mysql.createPool({
             connectionLimit: 30,
             host: params.hostName,
@@ -31,6 +34,11 @@ export default {
             database: params.schema
         });
     },
+
+    destroyConnectionPool() {
+        connectionPool.end();
+    },
+
 
     query: function (sql, params = []) {
         return new Promise((resolve, reject) => {

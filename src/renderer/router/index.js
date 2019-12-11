@@ -17,6 +17,10 @@ export default new Router({
         {
             path: '/connection',
             component: require('@/components/ConnectionDetails').default
+        },
+        {
+            path: '/preview',
+            component: require('@/components/Preview').default
         }
     ]
 })
