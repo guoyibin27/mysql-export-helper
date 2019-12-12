@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c6dfb10-558d-4b03-a61e-c07b48589860" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/Preview.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/template/html_template.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/vendor/excel/Blob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/vendor/excel/Export2Excel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/ConnectionDetails.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/ConnectionDetails.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/MainPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MainPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/mysql/dbmanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/mysql/dbmanager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/mysql/sqls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/mysql/sqls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,38 +123,42 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1038" y="118" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1575958863920" />
-    <state width="1060" height="116" key="GridCell.Tab.0.bottom" timestamp="1576061952690">
+    <state width="1899" height="315" key="GridCell.Tab.0.bottom" timestamp="1576134081183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1060" height="116" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1576061952690" />
-    <state width="1060" height="116" key="GridCell.Tab.0.center" timestamp="1576061952690">
+    <state width="1899" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1576134081183" />
+    <state width="1899" height="315" key="GridCell.Tab.0.center" timestamp="1576134081183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1060" height="116" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1576061952690" />
-    <state width="1060" height="116" key="GridCell.Tab.0.left" timestamp="1576061952690">
+    <state width="1899" height="315" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1576134081183" />
+    <state width="1899" height="315" key="GridCell.Tab.0.left" timestamp="1576134081183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1060" height="116" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1576061952690" />
-    <state width="1060" height="116" key="GridCell.Tab.0.right" timestamp="1576061952690">
+    <state width="1899" height="315" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1576134081183" />
+    <state width="1899" height="315" key="GridCell.Tab.0.right" timestamp="1576134081183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1060" height="116" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1576061952690" />
-    <state x="1176" y="238" key="RollbackChangesDialog" timestamp="1576047861257">
+    <state width="1899" height="315" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1576134081183" />
+    <state x="1176" y="238" key="RollbackChangesDialog" timestamp="1576122480710">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1176" y="238" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576047861257" />
+    <state x="1176" y="238" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576122480710" />
     <state x="1030" y="257" key="Vcs.Push.Dialog.v2" timestamp="1575958867927">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1030" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1575958867927" />
+    <state x="795" y="102" width="1023" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576119001350">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="795" y="102" width="1023" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576119001350" />
     <state x="1112" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575890210458">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1112" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1575890210458" />
-    <state x="921" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575958836730">
+    <state x="921" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576146140740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="921" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1575958836730" />
+    <state x="921" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1576146140740" />
     <state x="1105" y="247" key="run.anything.popup" timestamp="1575960983311">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

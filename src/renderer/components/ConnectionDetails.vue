@@ -137,6 +137,7 @@
                 };
             },
             async handleCommand(command) {
+                this.loading = true;
                 let self = this;
                 switch (command) {
                     case 'html': {
@@ -167,63 +168,72 @@
                     case 'excel': {
                         if (this.checkSelected()) {
                             let data = await self.prepareData();
-                            let headerRow = ['Field', 'Type', 'Collation', 'Charset', 'Null', 'Key', 'Default', 'Comment'];
-                            let conf = {};
-                            conf.name = "Schema for " + this.params.schema;
-                            conf.cols = [
-                                {
-                                    caption: "Field",
-                                    type: 'string'
-                                },
-                                {
-                                    caption: "Type",
-                                    type: 'string'
-                                },
-                                {
-                                    caption: "Collation",
-                                    type: 'string'
-                                },
-                                {
-                                    caption: "Charset",
-                                    type: 'string'
-                                }, {
-                                    caption: "Null",
-                                    type: 'string'
-                                },
-                                {
-                                    caption: "Key",
-                                    type: 'string'
-                                },
-                                {
-                                    caption: "Default",
-                                    type: 'string'
-                                },
-                                {
-                                    caption: "Comment",
-                                    type: 'string'
-                                }];
-                            console.error(data.tableList[0].columns);
-                            let allData = [];
-                            data.tableList[0].columns.forEach(column => {
-                                let row = [];
-                                row.push(column.columnName);
-                                row.push(column.columnType);
-                                row.push(column.collationName);
-                                row.push(column.characterSetName);
-                                row.push(column.isNullable);
-                                row.push(column.columnKey);
-                                row.push(column.columnDefault);
-                                row.push(column.columnComment);
-                                allData.push(row);
+                            require.ensure([], () => {
+                                let headerRow = ['Field', 'Type', 'Collation', 'Charset', 'Null', 'Key', 'Default', 'Comment'];
+                                let filterVal = ['columnName', 'columnType', 'collationName', 'characterSetName', 'isNullable', 'columnKey',
+                                    'columnDefault', 'columnComment'];
+
+                                let rowData = [];
+                                let mergeData = [];
+                                data.tableList.forEach(table => {
+                                    let columnArray = table.columns.map(column => filterVal.map(f => {
+                                        let v = column[f] ? column[f] : "";
+                                        return {
+                                            v: v,
+                                            s: {
+                                                border: {
+                                                    top: {style: "thin"},
+                                                    left: {style: "thin"},
+                                                    right: {style: "thin"},
+                                                    bottom: {style: "thin"},
+                                                }
+                                            },
+                                        }
+                                    }));
+                                    let headers = headerRow.map(item => {
+                                        return {
+                                            v: item,
+                                            s: {
+                                                fill: {bgColor: {rgb: "000000"}, fgColor: {rgb: "000000"}},
+                                                font: {color: {rgb: "FFFFFF"}}
+                                            }
+                                        }
+                                    });
+                                    columnArray.unshift(headers);
+                                    let tableNameArray = [table.tableName, '', '', '', '', '', '', ''];
+                                    tableNameArray = tableNameArray.map(item => {
+                                        return {
+                                            v: item,
+                                            s: {
+                                                fill: {bgColor: {rgb: "000000"}, fgColor: {rgb: "000000"}},
+                                                font: {color: {rgb: "FFFFFF"}}
+                                            },
+                                        }
+                                    });
+                                    columnArray.unshift(tableNameArray);
+                                    columnArray.push(new Array(headerRow.length));
+                                    rowData = rowData.concat(columnArray);
+                                    mergeData.push({
+                                        s: {c: 0, r: rowData.length - columnArray.length + 1},
+                                        e: {c: headerRow.length - 1, r: rowData.length - columnArray.length + 1}
+                                    });
+                                });
+
+                                let title = ["Scheme For " + this.params.schema, '', '', '', '', '', '', ''];
+
+                                const {export_json_to_excel} = require('../vendor/excel/Export2Excel');
+                                export_json_to_excel({
+                                    rowData: rowData,
+                                    mergeData: mergeData
+                                }, this.params.schema, "scheme-for-" + this.params.schema, title);
                             });
-                            conf.rows = allData;
-                            let excelExport = require('excel-export');
-                            let result = excelExport.execute(conf);
-                            self.saveFile(result, "xlsx");
+
+                            // self.saveFile(result, "xlsx");
                         }
                         break;
                     }
                 }
+                this.loading = false;
             },
             saveFile(content, fileExt) {
                 let blob = new Blob([content]);
