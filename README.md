@@ -1,4 +1,7 @@
 # mysql-export-helper
+#### 一个小工具，MySQL数据库的表结构文档输出，暂时支持 HTML，excel，markdown格式导出。
+#### 界面整体样子还是有点low的，不过功能暂时能用。
+#### 之前在需要的时候，找不到一个合适的工具，将数据库结构文档化工具，就抽时间写了这样一个工具。
 
 > An electron-vue project
 
@@ -24,5 +27,3 @@ npm run lint
 ```
 
 ---
-
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[45a3e22](https://github.com/SimulatedGREG/electron-vue/tree/45a3e224e7bb8fc71909021ccfdcfec0f461f634) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
